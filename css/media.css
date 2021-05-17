@@ -8,9 +8,6 @@
 
 }
 @media (max-width: 1200px){
-	body{
-		width: 1200px;
-	}
 		.works__gallery{
 		padding: 0 25px;
 	}
@@ -19,28 +16,24 @@
 		}
 
 }
-@media (max-width: 770px){}
 @media (max-width: 770px) {
-	body{
-		width: 1250px;
-	}
 	.title{
 		font-size: 40px;
 	}
 	.text{
-		font-size: 25px;
+		font-size: 20px;
+	}
+	.header.fixed{
+		padding: 10px 0;
 	}
 
 	/* Intro */
-	.intro {
-		width: 1240px;
-	}
 	.intro__title{
-		font-size: 80px;
+		font-size: 50px;
 	}
 	.intro__title p{
 		margin-top: 50px;
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.btn{
@@ -49,11 +42,10 @@
 
 	/* Header */
 	.header {
-		width: 1240px;
-		padding: 25px 0;
+		padding: 35px 0;
 	}
 	.header__startup{
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	/* Nav */
@@ -75,13 +67,12 @@
 	.nav__link {
 		display: block;
 		margin: 0;
-		padding: 15px 20px;
-		font-size: 25px;
+		padding: 20px;
+		font-size: 40px;
 	}
 
 	.nav-toggle {
 		display: block;
-		height: 45px;
 		width: 42px;
 	}
 	.nav-toggle__item{
@@ -101,10 +92,11 @@
 	}
 	.servicer__colon{
 		display: block;
-		margin: 0 120px;
+
+		padding: 0 10px;
 	}
 	.servicer__item{
-		width: 800px;
+		width: 90%;
 		margin-bottom: 60px;
 	}
 	.colon__logo-orange {
@@ -132,22 +124,31 @@
 	height: 99px;
 }
 .colon__title {
-	font-size: 40px;
+	font-size: 30px;
 	margin: 60px 0 40px 0;
 }
 .colon__text {
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 40px;
 }
 
 .works__gallery{
-		padding: 0 35px;
+	padding: 0 35px;
 }
 
 .about__info{
-		font-size: 25px;
+	display: block;
 }
-
+.about__text1 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.about__text2 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-left: -18px;
+}
 .social__icon {
 	margin: 100px -40px;
 }
@@ -184,10 +185,10 @@
 	padding: 50px 0;
 }
 .works__menu{
-	font-size: 30px;
+	font-size: 25px;
 }
 .works__item {
-	width: 48%;
+	width: 100%;
 }
 .works__title {
 	font-size: 35px;
@@ -205,47 +206,46 @@
 }
 
 .blog{
-	padding: 50px;
+	padding: 50px 0;
 }
 .blog__contant {
 	display: block;
 }
+.blog__logo{
+	width: 100%;
+}
 .blog__logo img{
-	width: 1120px;
-	height: 650px;
+	width: 50%;
+	height: 100%;
 }
 .info__data {
-	color: #000;
+	margin-left: -60px;
 }
-.info__name {}
+.info__name {
+}
 .name__title span{
-	font-size: 25px;
-	color: #000;
+	font-size: 21px;
 }
 .name__subtitle{
-	color: #000;
 }
 .name__subtitle span{
 	font-size: 20px;
-	color: #000;
 }
 .blog__text {
-	font-size: 25px;
-	color: #000;
+	font-size: 20px;
 }
 .botton span{
 	font-size: 30px;
-	color: #000;
 }
 
 .reviews{
-	padding: 50px 0;
+	padding: 10px 0;
 }
 .reviews__text {
-	font-size: 30px;
+	font-size: 15px;
 }
 .reviews__name {
-	font-size: 25px;
+	font-size: 15px;
 }
 
 .reviews__slider .slick-dots li{
@@ -267,7 +267,7 @@
 	justify-content: space-between;
 }
 .touch__item{
-	width: 500px;
+	width: 33%;
 	padding: 0 10px;
 	display: flex;
 	line-height: 50px;
@@ -277,7 +277,7 @@
 }
 .touch__item address{
 	margin-left: -0px;
-	font-size: 20px;
+	font-size: 10px;
 	line-height: 30px;
 }
 .fas {
@@ -292,12 +292,12 @@
 	margin: 50px;
 }
 .input {
-	width: 450px;
+	width: 100%;
 	height: 54px;
 	font-size: 20px;
 }
 .message {
-	width: 930px;
+	width: 450px;
 	font-size: 20px;
 	padding-top: 5px;
 }
@@ -328,26 +328,21 @@
 
 
 @media (max-width: 470px){
-
+	.container{
+		padding: 5px;
+	}
 	.title{
-		font-size: 50px;
+		font-size: 25px;
 	}
 	.text{
-		font-size: 30px;
+		font-size: 15px;
 	}
 
 	.about__info {
 		display: block;
 	}
-.about__text1 {
-	font-size: 30px;
-	line-height: 30px;
-	margin-bottom: 20px;
-}
-.about__text2 {
-	font-size: 30px;
-	line-height: 30px;
-	margin-left: -18px;
+.slick-track{
+	width: 100%;
 }
 
 .works__item{
@@ -369,6 +364,26 @@
 .works__btn span{
 	font-size: 50px;
 }
+.slider__photo{
+	width: 100px;
+	height: 100px;
+}
+.slider__name {
+	font-size: 15px;
+}
+.slider__info {
+	font-size: 10px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 15px;
+	width: 55px;
+	height: 58px;
+}
+.slider .slick-arrow.slick-next{
+	right: 15px;
+	width: 55px;
+	height: 58px;
+}
 
 
 .parallax__title {
@@ -381,50 +396,27 @@
 	display: block;
 	margin-bottom: 0px;
 }
-.blog__logo img{
-	width: 1120px;
-	height: 750px;
-}
 .info{
 	margin-top: -160px;
 	display: block;
 }
+.touch__info{
+	display: block;
+}
 .info__data {
-padding: 80px;
-font-size: 50px;
+padding: 10px;
+font-size: 30px;
 
 }
 .info__data p{
 
 	margin: 30px 0 0 -35px;
-font-size: 50px;
+font-size: 30px;
 }
 .info__name {
 	margin-top: 20px;
 }
-.name__title span{
 
-	font-size: 45px;
-	color: #000;
-}
-.name__subtitle{
-	color: #000;
-	font-size: 30px;
-}
-.name__subtitle span{
-	font-size: 30px;
-	color: #000;
-}
-.blog__text {
-	font-size: 35px;
-	line-height: 35px;
-	color: #000;
-	padding: 0 5px;
-}
-.botton span{
-	font-size: 40px;
-	color: #000;
-}
 
 .reviews__text {
 	font-size: 40px;
@@ -435,46 +427,45 @@ font-size: 50px;
 
 
 .touch__item{
-	width: 500px;
 	padding: 0 10px;
 	display: flex;
-	line-height: 50px;
+	line-height: 30px;
 }
 .touch__item span{
-	font-size: 30px;
+	font-size: 20px;
 }
 .touch__item address{
 	margin-left: -0px;
-	font-size: 25px;
+	font-size: 15px;
 	line-height: 30px;
 }
 .fas {
-	font-size: 35px;
+	font-size: 10px;
 	margin-right: 30px;
 }
 .fa-envelope {
-	font-size: 35px;
+	font-size: 10px;
 	margin-right: 30px;
 }
 .touch__form {
-	margin: 50px;
+	margin: 0px;
 }
 .input {
-	width: 930px;
-	height: 94px;
-	font-size: 30px;
+	width: 100%;
+	height: 34px;
+	font-size: 15px;
 }
 .message {
-	width: 930px;
-	height: 200px;
-	font-size: 30px;
+	width: 100%;
+	height: 100px;
+	font-size: 15px;
 	padding-top: 15px;
 }
 .formbtn {
-	font-size: 35px;
+	font-size: 15px;
 }
 .form__text {
-	font-size: 30px;
+	font-size: 15px;
 }
 
 .footer {
