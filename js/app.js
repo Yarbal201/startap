@@ -1,7 +1,7 @@
 $(function() {
 
 // Fixed Header
-	var header = $("#header"),
+	var header = $("#nav"),
 	introH = $("#intro").innerHeight(),
 	scrollOffset = $(window).scrollTop();
 
@@ -43,29 +43,8 @@ function checkScroll(scrollOffset) {
 		event.preventDefault();
 
 		$(this).toggleClass("active");
-		$("#nav").toggleClass("active");
+		$("#blogs__menu").toggleClass("active");
 	});
-
-// Slider
-$('.slider').slick({
-		arrows:true,
-		dots:false,
-		slidesToShow:4,
-		autoplay:true,
-		speed:1000,
-		autoplaySpeed:800,
-});
-
-$('.reviews__slider').slick({
-		arrows:false,
-		dots:true,
-		slidesToShow:1,
-		autoplay:true,
-		speed:2000,
-		autoplaySpeed:3000,
-});
-
-
 
 // AOS
 AOS.init({

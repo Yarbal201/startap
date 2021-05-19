@@ -5,19 +5,19 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>Startup</title>
+		<title>Awesome Games</title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/media.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="img/dist/css/lightbox.css">
 		<!-- Шрифты -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+		
 		<!-- Иконки -->
 		<script src="https://kit.fontawesome.com/778bd4b4cb.js" crossorigin="anonymous"></script>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
@@ -29,418 +29,364 @@
 	<div class="container">
 		<div class="header__inner">
 			<div class="header__startup">
-				<a href=""><span>Startup</span></a>
+				<div class="header__title" data-aos="fade-up">
+				<span>We</span> create <br>
+Awesome Games
+			</div>
 			</div>
 
-			<nav class="nav" id="nav">
-				<a href="#" class="nav__link" data-scroll="#intro">Home</a>
-				<a href="#" class="nav__link" data-scroll="#servicer">Services</a>
-				<a href="#" class="nav__link" data-scroll="#about">About</a>
-				<a href="#" class="nav__link" data-scroll="#works">Works</a>
-				<a href="#" class="nav__link" data-scroll="#blog">Blog</a>
-				<a href="#" class="nav__link" data-scroll="#reviews">Clients</a>
-				<a href="#" class="nav__link" data-scroll="#touch">Contact</a>
+			<nav class="nav" id="nav" data-aos="fade-right">
+				<a href="#about" class="nav__link" data-scroll="#about">About</a>
+				<a href="#process" class="nav__link" data-scroll="#process">Development</a>
+				<a href="#projects" class="nav__link" data-scroll="#projects">Projects</a>
+				<a href="#blog" class="nav__link" data-scroll="#blog">Blog</a>
 			</nav>
-
-			<button class="nav-toggle" id="nav_toggle" type="button">
-				<span class="nav-toggle__item">Menu</span>
-			</button>
 		</div>
 	</div>
 </header>
 
 <!-- Intro -->
-<div class="intro" id="intro">
-	<div class="container">
-		<div class="intro__inner">
-			<div class="intro__title" data-aos="fade-up"
->Welcome to STARTUP
-				<p>Your Favourite Creative Agency Template</p>
-			</div>
-			<a href="#" target="" class="btn btn--red" data-aos="zoom-in" data-scroll="#servicer">Get Started</a>
-		</div>
-		<div class="paralaks"></div>
-	</div>
-</div>
-
-<!-- Servicer -->
-<div class="servicer" id="servicer">
-	<div class="container">
-		<div class="servicer__inner inner">
-			<div class="servicer__title title">Services</div>
-			<div class="servicer__text text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-		</div>
-	
-		<div class="servicer__colon">
-			<div class="servicer__item" data-aos="fade-up-right">
-				<div class="colon__logo-orange">
-					<img src="img/services_1.png" alt="" class="colon__icon">
-				</div>
-				<div class="colon__title">Clean Typography</div>
-				<div class="colon__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
-			</div>
-			<div class="servicer__item" data-aos="fade-up">
-				<div class="colon__logo">
-					<img src="img/services_2.png" alt="" class="colon__icon2">
-				</div>
-				<div class="colon__title">Clean Typography</div>
-				<div class="colon__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
-			</div>
-			<div class="servicer__item" data-aos="fade-up-left">
-				<div class="colon__logo">
-					<img src="img/servicer_3.png" alt="" class="colon__icon3">
-				</div>
-				<div class="colon__title">Clean Typography</div>
-				<div class="colon__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
-			</div>
-		</div>
-	</div>
-	</div>
+<div class="intro" id="intro"></div>
 
 <!-- About -->
-<div class="about" id="about" data-aos="fade-up">
+<section class="about" id="about" data-aos="fade-up">
 	<div class="container">
-		<div class="inner">
-			<div class="title">About us</div>
-			<div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-		</div>
+		<div class="about__inner">
+			<div class="about__titles" data-aos="fade-right">
+				<div class="about__title"><span>A</span>bout</div>
+				<div class="about__subtitle title"><span>S</span>ublime</div>
+			</div>
+		
 		<div class="about__info">
-			<div class="about__text1" data-aos="fade-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div>
-			<div class="about__text2" data-aos="fade-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.</div>
+			<div class="about__text" data-aos="fade-left">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu
+			</div>
+		</div>
+		</div>
+		<div class="about__block">
+			<div class="about__item" data-aos="zoom-in-right">
+				<div class="block__logo">
+					<img src="img/block.png" alt="">
+				</div>
+				<div class="block__title">App Development</div>
+				<div class="block__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+
+			</div>
+			<div class="about__item" data-aos="zoom-in">
+				<div class="block__logo">
+					<img src="img/block.png" alt="">
+				</div>
+				<div class="block__title">Game Design</div>
+				<div class="block__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+
+			</div>
+			<div class="about__item" data-aos="zoom-in-left">
+				<div class="block__logo">
+					<img src="img/block.png" alt="">
+				</div>
+				<div class="block__title">Content Creation</div>
+				<div class="block__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</div>
+
+			</div>
 		</div>
 
-		<div class="slider">
-			<div class="slider__item">
-				<div class="slider__logo">
-				<img class="slider__photo" src="img/about_slider1.png" alt="">
-				<div class="logo__content">
-					<div class="social__icon">
-						<a href=""><i class="fab fa-facebook-f"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-google-plus-g"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-				</div>
-				<div class="slider__name">Md. Khalil Uddin</div>
-				<div class="slider__info">Head of Ideas</div>
-			</div>
-			<div class="slider__item">
-				<div class="slider__logo">
-				<img class="slider__photo" src="img/about_slider2.png" alt="">
-				<div class="logo__content">
-					<div class="social__icon">
-						<a href=""><i class="fab fa-facebook-f"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-google-plus-g"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-				</div>
-				<div class="slider__name">Rubel Miah</div>
-				<div class="slider__info">Lead WordPress Developer</div>
-			</div>
-			<div class="slider__item">
-				<div class="slider__logo">
-				<img class="slider__photo" src="img/about_slider3.png" alt="">
-				<div class="logo__content">
-					<div class="social__icon">
-						<a href=""><i class="fab fa-facebook-f"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-google-plus-g"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-				</div>
-				<div class="slider__name">Shamim Mia</div>
-				<div class="slider__info">Sr. Web Developer</div>
-			</div>
-			<div class="slider__item">
-				<div class="slider__logo">
-				<img class="slider__photo" src="img/about_slider4.png" alt="">
-				<div class="logo__content">
-					<div class="social__icon">
-						<a href=""><i class="fab fa-facebook-f"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-google-plus-g"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-				</div>
-				<div class="slider__name">John Doe</div>
-				<div class="slider__info">Front-end Developer</div>
-			</div>
-			<div class="slider__item">
-				<div class="slider__logo">
-				<img class="slider__photo" src="img/about_slider3.png" alt="">
-				<div class="logo__content">
-					<div class="social__icon">
-						<a href=""><i class="fab fa-facebook-f"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-google-plus-g"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-				</div>
-				<div class="slider__name">Shamim Mia</div>
-				<div class="slider__info">Sr. Web Developer</div>
-			</div>
-		</div>
 	</div>
-</div>
+</section>
 
-<!-- Works -->
-<div class="works" id="works" data-aos="fade-up">
+<!-- Projects -->
+<section class="projects" id="projects" data-aos="fade-up">
 	<div class="container">
-		<div class="works__inner">
-			<div class="title">Latest Works</div>
-			<div class="works__menu">
-				<nav>
-					<a href="">All</a>
-					<a href="">Branding</a>
-					<a href="">Design</a>
-					<a href="">Development</a>
-					<a href="">Strategy</a>
-				</nav>
-			</div>
-		</div>
-	</div>
-		<div class="works__gallery">
-			<div class="works__item"data-aos="flip-left">
-		<img class="works__photo" src="img/works_1.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item" data-aos="flip-down">
-		<img class="works__photo" src="img/works_2.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item"data-aos="flip-right">
-		<img class="works__photo" src="img/works_3.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item" data-aos="flip-right">
-		<img class="works__photo" src="img/works_4.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item"data-aos="flip-left">
-		<img class="works__photo" src="img/works_5.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item" data-aos="flip-right">
-		<img class="works__photo" src="img/works_6.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item"data-aos="flip-left">
-		<img class="works__photo" src="img/works_7.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item" data-aos="flip-up">
-		<img class="works__photo" src="img/works_8.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	<div class="works__item"data-aos="flip-right">
-		<img class="works__photo" src="img/works_9.png" alt="">
-		<div class="works__content">
-			<div class="works__title">Hair Dresser</div>
-			<div class="works__text">Branding</div>
-			<button class="works__btn"><span>View ></span></button>
-		</div>
-	</div>
-	</div>
-</div>
+		<div class="projects__inner">
+			<div class="title"><span>F</span>eatured <b>P</b>rojects</div>
 
-<!-- Parallax -->
-<div class="parallax" id="parallax">
-	<div class="parallax__inner">
-	<div class="parallax__title">Do you like OUR WORK so far?<br>
-Let's talk about YOUR PROJECT!</div>
-	<a href="#" target="" class="btn_par btn" data-aos="zoom-in"><span>Get in Touch</span></a>
-</div>
-   <div class="mask"></div>
-</div>
+			<nav class="projects__nav">
+				<a href="#" class="projects__nav-link">ALL WORKS</a>
+				<a href="#" class="projects__nav-link">GAMES</a>
+				<a href="#" class="projects__nav-link">APPLICATIONS</a>
+				<a href="#" class="projects__nav-link">CONTENT DEVELOPMENT</a>
+			</nav>
+		</div>
+	</div>
+	<div class="projects__gallery">
+		<div class="projects__item">
+			<a href="img/projects/projects1.png" data-lightbox="test"><img class="image" src="img/projects/projects1.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects2.png" data-lightbox="test"><img class="image" src="img/projects/projects2.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects3.png" data-lightbox="test"><img class="image" src="img/projects/projects3.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects4.png" data-lightbox="test"><img class="image" src="img/projects/projects4.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects5.png" data-lightbox="test"><img class="image" src="img/projects/projects5.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects6.png" data-lightbox="test"><img class="image" src="img/projects/projects6.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects7.png" data-lightbox="test"><img class="image" src="img/projects/projects7.png" alt="no-image"></a>
+		</div>
+		<div class="projects__item">
+			<a href="img/projects/projects8.png" data-lightbox="test"><img class="image" src="img/projects/projects8.png" alt="no-image"></a>
+		</div>
+	</div>
+</section>
 
-<!-- Blog -->
-<div class="blog" id="blog" data-aos="fade-up">
+<!-- Process -->
+<section class="process" id="process" data-aos="fade-up">
 	<div class="container">
-		<div class="inner">
-			<div class="title">Recent blog posts</div>
-			<div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+		<div class="process__inner">
+			<div class="title"><span>S</span>trategic <b>P</b>rocess</div>
+			<div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.</div>
 		</div>
-		<div class="blog__contant">
-			<div class="blog__logo" data-aos="fade-right">
-				<img src="img/blog_1.png" alt="">
-			</div>
-			<div class="blog__info" data-aos="fade-left">
-				<div class="info">
-				<div class="info__data">
-					18<p>OCT</p>
+		<div class="process__items">
+			<div class="process__item">
+				<div class="process__logo" data-aos="fade-right">
+					<img src="img/process1.png" alt="">
 				</div>
-			<div class="info__name">
-				<div class="name__title"><a href="#" target=""><span>Startup ideas needs to be funded</span></a></div>
-				<div class="name__subtitle">By <a href="#" target=""></a><span>Khalil</span> Uddin in <a href="#" target=""></a><span>Development</span></div>
-			</div>
-		</div>
-<div class="blog__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam</div>
-			<botton class="botton"><a href="#" target=""><span>Read more</span></a></botton>
-			</div>
-		</div>
+				<div class="process__info" data-aos="fade-left">
+					<div class="process__title"><span>O</span>ur <span>P</span>rocess</div>
+					<div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
 
-
-		<div class="blog__contant">
-			<div class="blog__logo" data-aos="fade-right">
-				<img src="img/blog_2.png" alt="">
-			</div>
-			<div class="blog__info" data-aos="fade-left">
-				<div class="info">
-				<div class="info__data">
-					18<p>OCT</p>
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu</div>
 				</div>
-			<div class="info__name">
-				<div class="name__title"><a href="" target=""><span>User Interface Designing Elements</span></a></div>
-				<div class="name__subtitle">By <span>Khalil</span> Uddin in <span>Development</span></div>
 			</div>
-		</div>
-<div class="blog__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam</div>
-			<botton class="botton"><a href="#" target=""><span>Read more</span></a></botton>
+			<div class="process__item-left item">
+				<div class="process__info" data-aos="fade-right">
+					<div class="process__title"><span>M</span>ethod</div>
+					<div class="process__text text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
+				</div>
+				<div class="process__logo-left" data-aos="fade-left">
+					<img src="img/process2.png" alt="">
+				</div>
+			</div>
+			<div class="process__item item">
+				<div class="process__logo" data-aos="fade-right">
+					<img src="img/process3.png" alt="">
+				</div>
+				<div class="process__info" data-aos="fade-left">
+					<div class="process__title"><span>O</span>utcome</div>
+					<div class="process__text3 text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<!-- Reviews -->
-<div class="reviews" id="reviews" data-aos="fade-up">
+<!-- Provided -->
+<section class="provided">
 	<div class="container">
-		<div class="reviews__block">
-			<img src="img/reviews_1.png" alt="">
-			<img src="img/reviews_2.png" alt="">
-			<img src="img/reviews_3.png" alt="">
-			<img src="img/reviews_4.png" alt="">
-			<img src="img/reviews_5.png" alt="">
-		</div>
-		<div class="reviews__slider">
-			<div class="reviews__item">
-				<div class="reviews__text">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
-				<div class="reviews__name">John Doe, Google Inc.</div>
+		<div class="provided__title title"><span>S</span>ervices <b>P</b>rovided</div>
+		<div class="provided__items">
+			<div class="provided__item" data-aos="fade-down-right">
+				<h3>App Development</h3>
+				<div class="provided__text">Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
 			</div>
-			<div class="reviews__item">
-				<div class="reviews__text">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
-				<div class="reviews__name">John Doe, Google Inc.</div>
+			<div class="provided__item" data-aos="fade-down-left">
+				<h3>Game Development</h3>
+				<div class="provided__text">Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
 			</div>
-			<div class="reviews__item">
-				<div class="reviews__text">Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
-				<div class="reviews__name">John Doe, Google Inc.</div>
+			<div class="provided__item" data-aos="fade-up-right">
+				<h3>App Design</h3>
+				<div class="provided__text">Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
+			</div>
+			<div class="provided__item" data-aos="fade-up-left">
+				<h3>Game Design</h3>
+				<div class="provided__text">Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<!-- Touch -->
-<div class="touch" id="touch" data-aos="fade-up">
+<!-- Team -->
+<section class="team" data-aos="fade-up">
 	<div class="container">
-		<div class="inner">
-			<div class="title">Get in touch</div>
-			<div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-			</div>
-			<div class="touch__boby">
-			<div class="touch__info">
-			<div class="touch__item">
-			<i class="fas fa-map-marker-alt"></i>
-			<div class="touch__name">
-			<span>Address</span>
-			<address>312, 7th Ave, New York <br>
-NY 101200, United States of America</address>
-			</div>
-			</div>
-			<div class="touch__item">
-			<i class="fas fa-mobile-alt"></i>
-			<div class="touch__name">
-			<span>Hotline (24x7)</span>
-			<address>+65 0052 300, +65 88251 210<br>
-+88 01723 511 340</address>
-</div>
-			</div>
-			<div class="touch__item">
-			<i class="far fa-envelope"></i>
-			<div class="touch__name">
-			<span>E-mail</span>
-			<address><a target="" href="#">shapedtheme@gmail.com</a>
-<a target="" href="#">khalilkode@gmail.com</a></address>
-</div>
-			</div>
-		</div>
-			<div class="touch__form">
-				<form action="#">
-				<input placeholder="Name" class="input" type="text">
-				</form>
-				<form action="#">
-				<input placeholder="Your E-mail" class="input" type="text">
-				</form>
-				<form action="#">
-				<input placeholder="Your subject" class="input" type="text">
-				</form>
-				<form action="#">
-				<input placeholder="Company name" class="input" type="text">
-				</form>
-				<form action="#">
-				<textarea placeholder="Write your message" class="message" type="text"></textarea>
-				</form>
-					<a class="formbtn" href="#" target="">Send message</a>
-				<div class="form__text"><span>*</span> We’ll contact you as as possible. We don’t reply on Monday.</div>
-			</div>
-		</div>
-	</div>
-</div>
+		<div class="team__inner">
+			<div class="title-little"><span>O</span>ur <b>T</b>eam</div>
+			<div class="team__text text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
 
-<!-- Footer -->
-<footer class="footer">
-	<div class="footer_social">
-		<a href=""><i class="fab fa-twitter"></i></a>
-		<a href=""><i class="fab fa-twitter"></i></a>
-		<a href=""><i class="fab fa-twitter"></i></a>
-		<a href=""><i class="fab fa-twitter"></i></a>
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
+		</div>
+		<div class="team__titles">
+			<div class="team__title">
+				<img src="img/team/team1.jpg" alt="" data-aos="flip-left">
+				<h4>John Doe</h4>
+				<div class="team__profesion">CoFounder / CEO</div>
+			</div>
+			<div class="team__title">
+				<img src="img/team/team2.jpg" alt="" data-aos="flip-right">
+				<h4>John Doe</h4>
+				<div class="team__profesion">process Manager</div>
+			</div>
+			<div class="team__title">
+				<img src="img/team/team3.jpg" alt="" data-aos="flip-left">
+				<h4>John Doe</h4>
+				<div class="team__profesion">Sales President</div>
+			</div>
+			<div class="team__title">
+				<img src="img/team/team4.jpg" alt="" data-aos="flip-right">
+				<h4>John Doe</h4>
+				<div class="team__profesion">Developer</div>
+			</div>
+		</div>
 	</div>
-	<div class="footer__copy">© 2015 Startup, Designed by ShapedTheme</div>
-</footer>
+</section>
+
+<!-- Testimonials -->
+<section class="test" data-aos="fade-up">
+	<div class="container">
+		<div class="title-big"><span>T</span>estimonials</div>
+	
+	<div class="test__item">
+		<div class="test__text text" data-aos="zoom-in-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+
+Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt</div>
+<div class="test__info">
+	<div class="info__logo">
+		<img src="img/test.png" alt="" data-aos="zoom-in">
+	</div>
+	<div class="info__name">
+		John Doe
+<p>CoFounder / CEO</p>
+	</div>
+</div>
+	</div>
+</div>
+</section>
+
+<!-- Blogs -->
+<section class="blogs" id="blog" data-aos="fade-up">
+	<div class="container">
+		<div class="title-blogs"><span>B</span>logs</div>
+	
+	<div class="blogs__body">
+		<div class="blogs__menu" id="blogs__menu" data-aos="zoom-in-right">
+			<div class="menu__item">
+			<a class="menu__link" href="#">Latest Posts</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">App Design</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">App Development</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">Design Solutions</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">Quality Assurance</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">Development Mode</a></div>
+			<div class="menu__item">
+			<a class="menu__link" href="#">What’s Out There</a></div>
+		</div>
+
+		<button class="nav-toggle" id="nav_toggle" type="button">
+				<span class="nav-toggle__item">Menu</span>
+			</button>
+
+		<div class="blogs__colon">
+			<div class="blogs__item">
+				<img src="img/blogs/blogs1.jpg" alt="">
+				<div class="blogs__data">July 4th 2016</div>
+				<div class="blogs__name">Lorem ipsum dolor sit amet,</div>
+				<div class="blogs__info">Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Nulla facilisis molestie dignissim.</div>
+			</div>
+			<div class="blogs__item">
+				<img src="img/blogs/blogs2.jpg" alt="">
+				<div class="blogs__data">June 20th 2016</div>
+				<div class="blogs__name">Lorem ipsum dolor sit amet,</div>
+				<div class="blogs__info">Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Nulla facilisis molestie dignissim.</div>
+			</div>
+			<div class="blogs__item">
+				<img src="img/blogs/blogs3.jpg" alt="">
+				<div class="blogs__data">May 6th 2016</div>
+				<div class="blogs__name">Lorem ipsum dolor sit amet,</div>
+				<div class="blogs__info">Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Nulla facilisis molestie dignissim.</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="contact" data-aos="fade-up">
+	<div class="google-maps">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.187320342135!2d73.88955291489212!3d18.47517238743538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea62d51980df%3A0x2852517b24c2f948!2zSGlsbCBNaXN0IEdhcmRlbiwgTklCTSBSb2FkLCBLYXVzYXIgQmF1Z2gsIEtvbmRod2EsIFB1bmUsIE1haGFyYXNodHJhIDQxMTA0OCwg0IbQvdC00ZbRjw!5e0!3m2!1suk!2sua!4v1621143059959!5m2!1suk!2sua" width="550" height="684" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+	<div class="contact__form">
+		<div class="contact__title title"><span>C</span>ontact <b>U</b>s</div>
+		<div class="touch__form">
+				<form action="#">
+				<input placeholder="Your Name" class="input" type="text">
+				</form>
+				<form action="#">
+				<input placeholder="Mobile" class="input input-little" type="text">
+				</form>
+				<form action="#">
+				<input placeholder="Email" class="input input-big" type="text">
+				</form>
+				<form action="#">
+				<textarea placeholder="Your Message" class="input message" type="text"></textarea>
+				</form>
+				<a class="button" href="">
+				<span class="formbtn" href="#" target="">
+					<span>SEND</span>
+				</span></a>
+			</div>
+			<div class="map">
+				<div class="map__title">Location Map</div>
+				<div class="map__info">
+					<div class="map__item">
+						<h4 class="h4">Address</h4>
+						<address><a href="https://goo.gl/maps/aYV5Rn6Hj4KysNZd9" target="">Hill Mist garden, Pune, 411 048. India</a></address>
+					</div>
+					<div class="map__item">
+						<h4 class="h4">Phone</h4>
+						<address class="address2"><a href="tel:+91 12534 67890" target="">+91 12534 67890</a></address>
+					</div>
+					<div class="map__item">
+						<h4 class="h4">Email</h4>
+						<address class="address3"><a href="email:firkho@firkho.com" target="">firkho@firkho.com</a></address>
+					</div>
+				</div>
+			</div>
+			<div class="social">
+				<div class="social__item"><a href="#" target=""><i class="fab fa-twitter"></i></a></div>
+				<div class="social__item"><a href="#" target=""><i class="fab fa-invision"></i></a></div>
+				<div class="social__item"><a href="#" target=""><i class="fab fa-facebook-f"></i></a></div>
+			</div>
+	</div>
+</section>
 
 			<!-- Подключаем jQuery -->
-			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 			<!-- Подключаем слайдер Slick -->
 			<script src="js/slick.min.js"></script>
 			<!-- Подключаем анимацию AOS -->
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<!-- Подключаем файл скриптов -->
 			<script src="js/app.js"></script>
+			<!-- Подключаем галерею Lightbox2 -->
+			<script src="img/dist/js/lightbox-plus-jquery.js"></script>
 	</body>
 </html>
