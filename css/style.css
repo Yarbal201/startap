@@ -1958,7 +1958,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.87);
-  z-index: 10;
+  z-index: 11;
 }
 
 .header__logo {
@@ -3506,6 +3506,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         flex-wrap: wrap;
   }
 
+  .tabs-block__info {
+    padding: 0 6px;
+  }
+
   .contact,
   .menu-tabs {
     padding: 20px 0;
@@ -3576,6 +3580,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .maps {
     margin-top: 30px;
+  }
+
+  .table__title {
+    left: 22px;
+  }
+
+  .title::before {
+    left: 40%;
   }
 }
 
