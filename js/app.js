@@ -1139,9 +1139,9 @@ window.addEventListener('scroll', scroll_scroll);
 function scroll_scroll() {
 	//scr_body.setAttribute('data-scroll', pageYOffset);
 	let src_value = pageYOffset;
-	let header = document.querySelector('header.header');
+	let header = document.querySelector('.header__menu');
 	if (header !== null) {
-		if (src_value > 10) {
+		if (src_value > 600) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
