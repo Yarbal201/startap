@@ -62,21 +62,33 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let sliderSlider = new Swiper('.special__container', {
+let sliderSlider = new Swiper('.slider-about__items', {
 	
-	//effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
+	
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
+	
+
+	//effect: 'coverflow',
+
+	// Дополнение к coverflow
+	coverflowEffect: {
+		// Угол
+		rotate: 20,
+		// Наложение
+		stretch: 50,
+		// Тень
+		slideShadows: true,
 	},
-	parallax: true,
-	
+
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
-	spaceBetween: 0,
+	spaceBetween: 100,
 	autoHeight: true,
-	speed: 2000,
+	speed: 1200,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	loop: true,
@@ -128,8 +140,6 @@ let sliderSlider = new Swiper('.special__container', {
 tippy('.tippy', {
 	content: "I'm a Tippy tooltip!",
 });
-
-
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -191,20 +201,28 @@ if (location.hash) {
 let iconMenu = document.querySelector(".icon-menu");
 if (iconMenu != null) {
 	let delay = 500;
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".menu__list");
+	let menuSocial = document.querySelector(".image1");
+	let menuSocial2 = document.querySelector(".image2");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
+			menuSocial.classList.toggle("_active");
+			menuSocial2.classList.toggle("_active");
 		}
 	});
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".menu__list");
+	let menuSocial = document.querySelector(".image1");
+	let menuSocial2 = document.querySelector(".image2");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
+	menuSocial.classList.remove("_active");
+	menuSocial2.classList.remove("_active");
 }
 //=================
 //BodyLock
@@ -1141,7 +1159,7 @@ function scroll_scroll() {
 	let src_value = pageYOffset;
 	let header = document.querySelector('.header__menu');
 	if (header !== null) {
-		if (src_value > 600) {
+		if (src_value > 900) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
