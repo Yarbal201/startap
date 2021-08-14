@@ -3140,6 +3140,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transition: 0.2s ease 0.2s;
   -o-transition: 0.2s ease 0.2s;
   transition: 0.2s ease 0.2s;
+  overflow-x: hidden;
 }
 
 .btn a {
@@ -3149,7 +3150,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: bold;
 }
 
-.btn a span {
+.btn a b {
   border-left: 1px solid #1a191788;
   padding-left: 14px;
   margin-left: 11px;
@@ -3160,6 +3161,44 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: #f79606;
   -webkit-box-shadow: 10px 0px 8px black;
           box-shadow: 10px 0px 8px black;
+}
+
+.btn .flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  -webkit-transform: skewX(-45deg);
+      -ms-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  -webkit-animation: flareAnimation;
+          animation: flareAnimation;
+  left: -150%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.4)));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  -webkit-animation: flareAnimation 3s infinite linear;
+          animation: flareAnimation 3s infinite linear;
+}
+
+@-webkit-keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
 }
 
 .icon-menu {
@@ -3601,6 +3640,7 @@ h3 {
   letter-spacing: 2px;
   color: #ffb548;
   margin-left: 13px;
+  cursor: pointer;
   position: relative;
 }
 
