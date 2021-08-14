@@ -140,6 +140,14 @@ let sliderSlider = new Swiper('.slider-about__items', {
 tippy('.tippy', {
 	content: "I'm a Tippy tooltip!",
 });
+
+window.onload = function () {
+	let preloader = document.getElementById('preloader');
+	preloader.classList.add('hide-preloader');
+	setInterval(function () {
+		preloader.classList.add('preloader-hidden');
+	}, 990);
+}
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -1159,7 +1167,7 @@ function scroll_scroll() {
 	let src_value = pageYOffset;
 	let header = document.querySelector('.header__menu');
 	if (header !== null) {
-		if (src_value > 900) {
+		if (src_value > 800) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
