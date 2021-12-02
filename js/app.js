@@ -62,16 +62,73 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let sliderSlider = new Swiper('.slider-about__items', {
+let sliderSlider = new Swiper('.header-slider', {
 	
+	parallax: true,
+	//effect: 'fade',
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
 	
-	// autoplay: {
-	// 	delay: 3000,
-	// 	disableOnInteraction: false,
-	// },
-	
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 2000,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	pagination: {
+		el: '.logo-slider__pagging',
+		clickable: true,
+	},
+	// Arrows
+	navigation: {
+		nextEl: '.about__more .more__item_next',
+		prevEl: '.about__more .more__item_prev',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
 
-	//effect: 'coverflow',
+let sliderSlider2 = new Swiper('.logo-slider', {
+	
+	//effect: 'cube',
+	/*// Эффект потока
+	effect: 'coverflow',
 
 	// Дополнение к coverflow
 	coverflowEffect: {
@@ -81,14 +138,18 @@ let sliderSlider = new Swiper('.slider-about__items', {
 		stretch: 50,
 		// Тень
 		slideShadows: true,
+	},*/
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
 	},
-
+	centeredSlides:true,
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
-	spaceBetween: 100,
+	spaceBetween: 0,
 	autoHeight: true,
-	speed: 1200,
+	speed: 2000,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	loop: true,
@@ -96,14 +157,14 @@ let sliderSlider = new Swiper('.slider-about__items', {
 	//lazy: true,
 	// Dotts
 	pagination: {
-		el: '.slider-quality__pagging',
+		el: '.posts__pagging',
 		clickable: true,
 	},
 	// Arrows
-	navigation: {
+	/*navigation: {
 		nextEl: '.about__more .more__item_next',
 		prevEl: '.about__more .more__item_prev',
-	},
+	},*/
 	/*
 	breakpoints: {
 		320: {
@@ -210,27 +271,19 @@ let iconMenu = document.querySelector(".icon-menu");
 if (iconMenu != null) {
 	let delay = 500;
 	let menuBody = document.querySelector(".menu__list");
-	let menuSocial = document.querySelector(".image1");
-	let menuSocial2 = document.querySelector(".image2");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
-			menuSocial.classList.toggle("_active");
-			menuSocial2.classList.toggle("_active");
 		}
 	});
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__list");
-	let menuSocial = document.querySelector(".image1");
-	let menuSocial2 = document.querySelector(".image2");
+	let menuBody = document.querySelector(".menu__body");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
-	menuSocial.classList.remove("_active");
-	menuSocial2.classList.remove("_active");
 }
 //=================
 //BodyLock
@@ -1165,9 +1218,9 @@ window.addEventListener('scroll', scroll_scroll);
 function scroll_scroll() {
 	//scr_body.setAttribute('data-scroll', pageYOffset);
 	let src_value = pageYOffset;
-	let header = document.querySelector('.header__menu');
+	let header = document.querySelector('.menu');
 	if (header !== null) {
-		if (src_value > 800) {
+		if (src_value > 500) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
@@ -1371,7 +1424,7 @@ if (link) {
 			}
 			let target_block_class = el.getAttribute('href').replace('#', '');
 			let target_block = document.querySelector('.' + target_block_class);
-			_goto(target_block, 300);
+			_goto(target_block, 1300);
 			e.preventDefault();
 		})
 	}
