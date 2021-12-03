@@ -4942,6 +4942,25 @@ footer {
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
     transition: 0.8s;
+  }
+
+  .about__item.item1 {
+    top: 0;
+    left: -100px;
+  }
+
+  .about__item.item2 {
+    top: 0;
+    left: -100px;
+  }
+
+  .about__item.item3 {
+    top: 0;
+    left: -100px;
+  }
+
+  .about__item.item4 {
+    top: 0;
     left: -100px;
   }
 
